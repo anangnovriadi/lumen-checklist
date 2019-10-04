@@ -1,5 +1,5 @@
 # Lumen Checklist
-This is a simple project Lumen App (API) which works with Laravel Passport (OAuth 2.0).
+This is a simple project Lumen 5.5 App (API) which works with Laravel Passport (OAuth 2.0).
 
 ### Instalation
 Clone this repository. Run the following commands :
