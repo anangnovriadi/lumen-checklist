@@ -12,14 +12,9 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         factory(App\User::class)->create([
-            'name' => 'Heisenberg',
-            'email' => 'heisenberg@breakingbad.com',
-            'password' => password_hash('crystal_meth', PASSWORD_BCRYPT)
-        ]);
-        factory(App\User::class)->create([
-            'name' => 'Jesse Pinkman',
-            'email' => 'jesse@breakingbad.com',
-            'password' => password_hash('chilli_powder', PASSWORD_BCRYPT)
+            'name' => 'nang',
+            'email' => 'nangning@gmail.com',
+            'password' => password_hash('123456', PASSWORD_BCRYPT)
         ]);
     }
 }
