@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
+$router->post('/login', 'AuthController@login');
+
 $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('/', function () use ($router) {
         return "API is working.";

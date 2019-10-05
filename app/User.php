@@ -11,7 +11,7 @@ use Laravel\Passport\HasApiTokens;
 
 class User extends Model implements AuthenticatableContract, AuthorizableContract
 {
-    use HasApiTokens, Authenticatable, Authorizable;
+    use Authenticatable, Authorizable, HasApiTokens;
 
     /**
      * The attributes that are mass assignable.
