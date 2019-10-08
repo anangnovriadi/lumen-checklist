@@ -13,15 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
-$router->post('/login', 'AuthController@login');
-
-$router->group(['prefix' => 'api'], function () use ($router) {
+$router->group(['prefix' => '/api/v1'], function () use ($router) {
     $router->get('/', function () use ($router) {
-        return "API is working.";
+        return "API sudah jalan bosss.";
     });
 
+    $router->post('/login', 'AuthController@login');
+
     $router->group(['middleware' => 'auth'], function () use ($router) {
-        $router->get('/element', 'ElementController');
+        $router->get('/tes', 'UserController@index');
     });
 });
 
